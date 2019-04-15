@@ -1,0 +1,5 @@
+parser能力::
+if  while  宣告變數  一般運算  printf	return	for		read	function invocation		判斷式	
+執行方法:先 yacc parser -d   用來得出y.tab.h 和 y.tab.c (由於lex 需include y.tab.h)
+再lex lex.l 得出 lex.yy.c
+最後gcc lex.yy.c y.tab.c  得到parser檔
